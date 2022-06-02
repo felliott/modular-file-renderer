@@ -7,7 +7,7 @@
     <div class="scroller scroller-left"><i class="glyphicon glyphicon-chevron-left"></i></div>
     <div class="scroller scroller-right"><i class="glyphicon glyphicon-chevron-right"></i></div>
     <nav class="wrapper">
-        <ul id="tabular-tabs" class="nav nav-tabs list" style="height: 45px; overflow: auto; white-space: nowrap;"> 
+        <ul id="tabular-tabs" class="nav nav-tabs list" role="tablist" style="height: 45px; overflow: auto; white-space: nowrap;">
         </ul>
     </nav>
     <div id="inlineFilterPanel" style="background:#dddddd;padding:3px;color:black;">
