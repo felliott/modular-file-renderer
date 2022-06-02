@@ -11,7 +11,7 @@
         </ul>
     </nav>
     <div id="inlineFilterPanel" style="background:#dddddd;padding:3px;color:black;">
-        Show rows with cells including: <input type="text" id="txtSearch" aria-label="Search">
+      <label>Show rows with cells including: <input type="text" id="txtSearch" aria-label="Search"></label>
     </div>
     <div id="mfrGrid" style="min-height: ${height}px;">
     </div>
