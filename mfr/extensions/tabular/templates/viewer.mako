@@ -34,7 +34,12 @@
         for (var sheetName in sheets){
             var sheet = sheets[sheetName];
             sheetName = sheetName.replace( /(:|\.|\[|\]|,|@|&|\ )/g, '_' ); //Handle characters that can't be in DOM ID's
-            $("#tabular-tabs").append('<li style="display:inline-block; float: none;"><a id="' + sheetName + '" aria-controls="' + sheetName + '" role="tab" data-toggle="tab">'+ sheetName + '</a></li>');
+            $("#tabular-tabs").append(
+                '<li style="display:inline-block; float: none;" id="'
+                + sheetName + '" aria-controls="' + sheetName
+                + '" role="tab" data-toggle="tab"><a>'+ sheetName
+                + '</a></li>'
+            );
             gridArr[sheetName] = [sheet[0], sheet[1]];
 
             $('#'+sheetName).click(function (e) {
@@ -51,7 +56,7 @@
         }
 
         $("#tabular-tabs").tab();
-        $("#tabular-tabs a:first").click();
+        $("#tabular-tabs li:first").click();
 
         $("#txtSearch").keyup(function (e) {
             // clear on Esc
